@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+p,h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-section{
+    background-image: url(/developer.png);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.text h1{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.mid-section{
+    /* height: 200px;
+    position: relative; */
+   padding: 30px;
+    background-color: black;
+}
+
+.mid-section h1{
+    /* position: absolute; */
+    /* top:30%;
+    left: 20%; */
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    
+}
+
+.flexbox{
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 70px;
+    padding-left: 50px ;
+    padding-bottom: 70px;
+    
+}
+
+.tile{
+    width:370px;
+    margin:  20px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.5); 
+    border-radius: 7px;
+    transition:  0.3s ease-in-out;
+}
+
+.tile:hover{
+    transform: scale(1.1);
+    transition:  0.3s ease-in-out;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.8); 
+
+}
+
+.tile img{
+   width: 100%;
+}
+
+.tile h1{
+    padding: 10px 0 5px 0;
+}
+
+.tile p{
+    padding-top: 10px;
+    text-align:justify;
+    line-height: 20px;
+    letter-spacing: 1.2px;
+    padding-bottom: 10px;
+}
+
+.text-padding{
+    padding: 10px;
+}
+
+.divideinto2{
+    display: flex;
+}
+
+.contact{
+    width: 50%;
+    background-color: #515603 ;
+    padding: 15px;
+}
+
+.about{
+    width: 50%;
+    background-color: #722300;
+    padding: 15px;
+}
+
+.contact h1,p{
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding: 15px;
+}
+
+.about h1,p{
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding: 15px;
+}
+
+
+
+.footer{
+    padding: 10 px 0px;
+}
+
+.footer p{
+    font-size: 40px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+@media (max-width:786px){
+    .text{
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        right: 25%;
+    }
+    .mid-section{
+       padding: 30px;
+    }
+    
+    .mid-section h1{
+        font-size: 3rem;
+        
+    }
+
+    .flexbox{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .divideinto2{
+        width: 100%;
+       
+        flex-direction: column;
+        /* text-align: center; */
+        /* padding: 0px 50px; */
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact , .about{
+        margin: 20px 0px;
+    }
+
+    
+}
+
